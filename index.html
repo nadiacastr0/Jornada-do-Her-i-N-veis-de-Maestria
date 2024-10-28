@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jornada do Herói</title>
+
+     <!-- Styles -->     
+     <link rel="stylesheet" href="./src/assets/style/reset.css">
+     <link rel="stylesheet" href="./src/assets/style/main.css">
+ 
+     <!-- Fonts -->
+     <link rel="preconnect" href="https://fonts.googleapis.com" />
+     <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Micro+5&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <h1>Classificação de Ranque</h1>
+        <form onsubmit="event.preventDefault(); classificarHeroi();">
+            <label for="username">Username:</label>
+            <input type="text" id="username" required>
+            <label for="xp">Quantidade de XP:</label>
+            <input type="number" id="xp" required>
+            <button type="submit">Classificar</button>
+        </form>
+        
+        <h2 id="resultado"></h2>
+        <p id="aviso" class="aviso"></p>
+    </div>
+
+    
+
+    <script defer src="./src/scripts/main.js"></script>
+</body>
+</html>
